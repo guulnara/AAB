@@ -1,0 +1,42 @@
+
+cardHolderName = "Иван Иванов"
+cardNumber = "1234 5678 9012 3456"
+expiryDate = "12/25"
+cvv = "123"
+bankName = "Банк Пример"
+cardType = "Кредитная"
+
+
+function generateCardDesign(holderName, number, expiry, cvv, bank, type) {
+    cardDesign = """
+    +-----------------------------------+
+    |          {bank}                  |
+    |                                   |
+    |          {type} Card             |
+    |                                   |
+    | Cardholder: {holderName}         |
+    |                                   |
+    | Card Number: {number}            |
+    |                                   |
+    | Expiry Date: {expiry}            |
+    | CVV: {cvv}                       |
+    |                                   |
+    +-----------------------------------+
+    """
+    
+    
+    cardDesign = cardDesign.replace("{holderName}", holderName)
+                           .replace("{number}", number)
+                           .replace("{expiry}", expiry)
+                           .replace("{cvv}", cvv)
+                           .replace("{bank}", bank)
+                           .replace("{type}", type)
+    
+    return cardDesign
+}
+
+
+card = generateCardDesign(cardHolderName, cardNumber, expiryDate, cvv, bankName, cardType)
+
+
+print(card)
