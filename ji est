@@ -1,0 +1,13 @@
+start
+new B string
+new I string 
+new N string
+new G string
+new O string
+B = "B"
+I = "I"
+N = "N"
+G = "G"
+O = "O"
+log string >> B >> I >> N >> G >> o
+finish
