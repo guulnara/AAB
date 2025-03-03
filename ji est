@@ -9,5 +9,5 @@ I = "I"
 N = "N"
 G = "G"
 O = "O"
-log string >> B >> I >> N >> G >> o
+log string >> B >> I >> N >> G >> O
 finish
